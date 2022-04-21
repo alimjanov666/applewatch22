@@ -1,0 +1,398 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Bold.woff2') format('woff2'),
+        url('Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --text-color: #333;
+    --brand-color: #EA625C;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: var(--brand-color) solid 1px;
+    outline-offset: 3px;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    font-family: "Arial", 'Roboto', sans-serif;
+    font-size: 16;
+    font-weight: 500;
+    line-height: normal;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* container styles*/
+
+.container {
+    width: 100%;
+    max-width: 1040px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* */
+
+
+/* button styles */
+.red-btn {
+    background-color:#EA625C;
+    padding: 12px 38px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 27px;
+    border: 0;
+    cursor: pointer;
+}
+
+
+/*  */
+/* site header styles */
+
+.site-header {
+    padding-top: 30px;
+}
+
+.site-header-container {
+    display: flex;
+}
+.site-header-link {
+    display: block;
+    text-decoration: none;
+    margin-right: auto;
+}
+.site-header-img {
+    width: 35px;
+    height: 41px;
+}
+
+.site-header-img:hover  {
+    opacity: 0.8;
+}
+
+.site-header-img:active  {
+    opacity: 0.2;
+}
+
+    .site-nav-list {
+        list-style: none;
+        display: flex;
+}
+
+.site-header-item {
+    margin-right: 30px;
+}
+.site-nav-item-link {
+    text-decoration: none;
+    color:var(--text-color);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22.5px;
+    color: var(--text-color);
+}
+
+.site-nav-item-link:hover {
+    color: #EA625C;
+}
+
+.site-header-form {
+    margin-left: 10px;
+}
+.site-header-form-input {
+    border: 0;
+    padding-bottom: 6px; 
+    border-bottom: 2px solid #333;
+    
+}
+
+
+.site-header-form-input:hover::before {
+} 
+/* main section */
+.main {
+    flex-grow: 1;
+}
+
+/* main end */
+/* intro  sec */
+
+
+.intro {
+    background-image: url(../img/intro-bg.png);
+    background-repeat: no-repeat;
+    background-size: 587px 565px;
+    background-position: calc(50% + 438.5px
+    ) bottom;
+    padding: 140px 0 185px 0;}
+    
+
+.intro-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000;
+}
+.intro-text {
+    width: 100%;
+    max-width: 450px;
+    height: 120px;
+    font-weight: 400;
+    border-left: 3px solid #888;
+    padding-left: 37px; 
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+
+}
+
+
+.red-btn {
+    background-color:#EA625C;
+    padding: 12px 38px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 27px;
+    border: 0;
+}
+
+.red-btn:hover {
+    background-color: #ea635cc4;
+
+}
+
+.red-btn:active {
+    background-color: #ea635c8c;
+
+}
+
+
+.intro-container {
+display: flex;
+}
+
+
+/* end intro sec */
+
+.hr {
+    height: 2px;
+    background-color: #ddd;
+    margin-bottom: 60px;
+}
+
+.feature-section {
+
+}
+.ft-list { 
+    display: flex;
+    list-style: none;
+    flex-wrap: nowrap;
+    margin-left: -80px;
+}
+.ft-item {
+    width: 100%;
+    max-width: 280px;
+}
+
+.ft-item:not(last-child){
+    margin-left: 80px;
+}
+
+.ft-item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.ft-item-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+
+.ft-pointer {
+width: 8px;
+height: 8px;
+background-color: #ddd;
+display: inline-block;
+box-shadow: 18px 0px #ddd, 36px 0px #ddd;
+transition: all 0.6s ease;
+/*  */
+
+}
+
+.ft-pointer:hover {
+    background-color:#EA625C;
+    box-shadow: 18px 0px var(--brand-color), 36px 0px var(--brand-color);
+}
+
+.ft-a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 26.6px;
+    font-weight: 700;
+    color: #EA625C;
+    display: flex;
+    align-items:center;
+    
+}
+
+
+.ft-a::before {
+    content: "";
+    width: 0px;
+    height: 2px;
+    display: flex;
+    background-color: #EA625C;
+    margin-right: 10px;
+    transition: width 0.9s ease;
+}
+
+.ft-a:hover::before {
+    width: 40px;
+}
+
+
+
+
+.watch-in-hand-img {  
+    background-image: url(../img/watch-in-hand.png);
+    background-repeat: no-repeat;
+    background-size: 400px 599px;
+    background-position: calc(50% + 290px) ;
+    padding: 140px 0 194px 0;}
+
+
+.watchinhand-container {
+    align-items:center;
+    display: flex;
+
+}
+.watchinhand-title {
+    width: 380px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000;
+    padding-bottom: 30px;
+
+}
+.watchinhand-text {
+    width: 100%;
+    max-width: 450px;
+    height: 120px;
+    font-weight: 400;
+    border-left: 3px solid #888;
+    padding-left: 37px; 
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+
+
+}
+
+
+.site-bottom {
+    background-image: url(../img/runners1.png);
+    background-repeat:no-repeat;
+    padding: 240px 0px;
+    background-size:cover;
+}
+.container {
+}
+.site-bottom-container {
+    display:flex ;
+    align-items:center;
+    justify-content: flex-end;
+
+}
+.site-btm-title {
+    width: 380px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+    margin-bottom: 30px;
+
+}
+.site-btm-text {
+    width: 100%;
+    max-width: 450px;
+    height: 120px;
+    font-weight: 400;
+    border-left: 3px solid rgb(255, 255, 255);
+    padding-left: 37px; 
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+
+.wraper {
+
+}
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx)  {
+
+    .intro {
+        background-image: url(../img/intro-bg@2x.png);
+        }
+        .site-bottom {
+            background-image: url(../img/runners1@2x.png);
+        }
+        .watch-in-hand-img {  
+            background-image: url(../img/watch-in-hand@2x.png);
+        }
+        }
